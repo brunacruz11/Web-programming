@@ -83,15 +83,14 @@ function load (req, res) {
 			res.writeHead(200, { 
 				'Content-Type' : 'application/json' 
 			});
-			result.lastOutcome = play(path[2]); 
-			play(path[2]); 
+			result.lastOutcome = play(path[2]);  
 			res.write(JSON.stringify(result));
 //			res.write(JSON.stringify([outcome, result]));
 			res.end();
 		}
 
 	} else {
-		res.writeHead(200, { 'Content-Type' : 'application/json' });
+		res.writeHead(404, { 'Content-Type' : 'text/html' });
 		res.write("Invalid url :( ");
 		res.end();
 	}
