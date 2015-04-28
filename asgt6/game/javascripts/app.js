@@ -4,10 +4,6 @@ var main = function () {
     "use strict";
     
     var $text;
-    var $message;
-    var $table;
-    var $td;
-    var $tr;
     var play = {};
     
     $("#formId button").on("click", function (event) {
@@ -33,6 +29,7 @@ var main = function () {
                 $("#lastOutcome td:first-child").text("Last outcome:");
                 $("#lastOutcome td:nth-child(2)").text(data.lastOutcome);
             
+              
             }
         });       
     });

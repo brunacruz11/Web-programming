@@ -7,7 +7,6 @@ var result = {
 
 var express = require("express"),
 http = require("http"),
-bodyParser = require('body-parser'),
 app;
 
 app = express();
